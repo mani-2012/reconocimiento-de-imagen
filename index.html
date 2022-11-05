@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
    <link rel="stylesheet" href="style.css">
@@ -23,17 +23,17 @@
       <p style="font-size: 22px;">El modelo está entrenado para identificar los siguientes objetos: </p>
       <h3>Botella</h3> <br> <h3>Silla</h3> <br> <h3>Celular o telefono</h3> <br> <h3>Sal</h3> <br> <h3>Audifonos</h3> <br> <h3>Calsetin</h3> <br> <h3>mouse </h3>
       <label>Vista de la cámara: </label>
-
-      <br><br>
-
-      <br><br>
       <div id="camara"></div>
       <br><br>
-      
+      <div id="foto"></div>
       <br><br>
-
-      <p style="font-size: 22px;">Objeto:  </p>
-      <p style="font-size: 22px;">Precisión:  </p>
+      <br><br>
+      <button onclick="papa()">Toma Foto</button>
+      <br><br>
+      <button onclick="pro()">Precisión</button>
+      <br><br>
+      <p style="font-size: 22px;">Objeto:  </p> <p id="object"></p>
+      <p  style="font-size: 22px;">Precisión:  </p> <p id="pet"></p>
     </center>
 
   </div>
