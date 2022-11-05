@@ -1,5 +1,5 @@
 body{
-    background-color:hotpink ;
+    background:linear-gradient(lightpink,white,lightblue);
     color: darkviolet;
 }
 h3{
